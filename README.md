@@ -2,6 +2,8 @@
 
 Pinepath is a responsive trip planner for Baguio City and nearby Benguet, including La Trinidad and Tuba. Explore 35 curated places, build an editable multi-day route, review an estimated budget, inspect stops on a map, and save or share a plan without an account.
 
+**Live demo:** https://paoooo0826.github.io/Pinepath/
+
 > Portfolio project. Fees, venue hours, activity prices, accessibility and travel times are planning estimates, not official or live quotes. Confirm details with venues before traveling. Lodging and travel to Baguio are excluded from budget estimates.
 
 ## Screenshots
@@ -50,7 +52,7 @@ npm run preview
 2. Create a GitHub repository and push **the extracted files** to its `main` branch. Keep `.github/workflows/deploy.yml`.
 3. In the repository, select **Settings → Pages → Build and deployment → GitHub Actions**. A push to `main` runs `npm ci`, builds, and deploys `dist/`.
 
-No secrets or environment variables are required. Vite's relative `base: './'` supports project subpaths. React Router uses hash URLs (`/#/explore`, `/#/planner`) so deep links refresh on static hosts without a rewrite rule. Do not commit `node_modules` or `dist`; the workflow creates the deployment output.
+No secrets or environment variables are required. Vite's relative `base: './'` supports project subpaths. React Router uses hash URLs (`/#/explore`, `/#/planner`) so deep links refresh on static hosts without a rewrite rule. Do not commit `node_modules` or `dist`; the workflow creates the deployment output. The checked-in root `assets/` files are a production fallback for repositories whose Pages source is still set to the `main` branch root.
 
 The live Sites checkout has its own hosting configuration. The GitHub-ready ZIP does not need that configuration.
 
